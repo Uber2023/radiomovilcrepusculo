@@ -1,0 +1,415 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b0f19;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    width: 100%;
+    max-width: 1100px;
+    background: rgba(10, 15, 28, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 32px;
+    box-shadow: 0 28px 90px rgba(0, 0, 0, 0.25);
+}
+
+.hero-content {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.hero-cta {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem auto;
+    font-size: 1rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #f97316, #fbbf24);
+    color: #0b0f19;
+    box-shadow: 0 20px 40px rgba(249, 115, 22, 0.28);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.hero-cta:hover,
+.hero-cta:focus {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 50px rgba(249, 115, 22, 0.35);
+    filter: brightness(1.02);
+}
+
+.hero-cta-status {
+    font-size: 0.95rem;
+    margin: 0 auto 1.75rem auto;
+    max-width: 420px;
+    color: #cbd5e1;
+    line-height: 1.4;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #864ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+.main-service {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.main-service h2 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.badge {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #0b0f19;
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.subtitle {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #94a3b8;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto 2.5rem auto;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 1.1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 320px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: translateY(-3px);
+}
+
+.btn-services {
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: white;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.btn-phone {
+    background-color: #3b82f6;
+    color: white;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.btn-mobile-call {
+    background: linear-gradient(135deg, #f97316, #ef4444);
+    color: white;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+    color: white;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.login-panel {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.login-panel .btn-login {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 0.85rem;
+}
+
+.login-note {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    line-height: 1.5;
+}
+
+.btn-login {
+    background: linear-gradient(135deg, #fbbf24, #f97316);
+    color: #0b0f19;
+    box-shadow: 0 4px 15px rgba(251, 191, 36, 0.25);
+}
+
+/* Gradiente estilo Crepúsculo */
+.gradient-text {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #864ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+/* Sección Servicio Principal destacado */
+.main-service {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.main-service h2 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.badge {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #0b0f19;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/* Subtítulo */
+.subtitle {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #94a3b8;
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto 2.5rem auto;
+}
+
+/* Contenedor de Botones de Contacto */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilo base de los botones */
+.btn {
+    text-decoration: none;
+    padding: 1.1rem 1.5rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Botón de servicios */
+.btn-services {
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: white;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+/* Botón de Teléfono Fijo */
+.btn-phone {
+    background-color: #3b82f6; /* Azul moderno */
+    color: white;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+/* Botón de Celular Directo (Nuevo) */
+.btn-mobile-call {
+    background: linear-gradient(135deg, #f97316, #ef4444); /* Degradado Naranja/Rojo */
+    color: white;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+}
+
+/* Botón de WhatsApp */
+.btn-whatsapp {
+    background-color: #25d366; /* Verde oficial WhatsApp */
+    color: white;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+/* Botón de inicio de sesión */
+.btn-login {
+    background: linear-gradient(135deg, #fbbf24, #f97316);
+    color: #0b0f19;
+    box-shadow: 0 4px 15px rgba(251, 191, 36, 0.25);
+}
+
+.login-status {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    min-height: 1.2rem;
+}
+
+.login-status.login-success {
+    color: #86efac;
+}
+
+.login-status.login-error {
+    color: #fca5a5;
+}
+
+    box-shadow: 0 4px 15px rgba(251, 191, 36, 0.25);
+}
+
+.login-status {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    min-height: 1.2rem;
+}
+
+.login-status.login-success {
+    color: #86efac;
+}
+
+.login-status.login-error {
+    color: #fca5a5;
+}
+
+/* Estilos para la página de servicios */
+.back-link {
+    display: inline-block;
+    color: #fbbf24;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1.25rem;
+    text-align: left;
+    color: #f8fafc;
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    display: block;
+}
+
+.service-card:hover {
+    transform: translateY(-3px);
+    border-color: #fbbf24;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.featured-service {
+    border-color: #f59e0b;
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(255, 255, 255, 0.06));
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.15);
+}
+
+.featured-service h3 {
+    color: #fef3c7;
+}
+
+.service-icon {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+}
+
+.service-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-card p {
+    color: #cbd5e1;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Responsive para pantallas medianas/grandes (Tablets y PCs) */
+@media (min-width: 850px) {
+    .contact-container {
+        flex-direction: row;
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
