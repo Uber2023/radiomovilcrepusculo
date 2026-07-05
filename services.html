@@ -1,85 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9RC8CY6Q4R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9RC8CY6Q4R');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Radio Móvil Crepúsculo</title>
+    <title>Servicios — Radio Móvil Crepúsculo</title>
+    <meta name="description" content="Servicios de Radio Móvil Crepúsculo: taxi puerta a puerta, delivery, mensajería, paquetería, aeropuerto, chofer designado y más.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="hero-section">
+
+    <!-- Fondo atmosférico -->
+    <div class="sky-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="stars"></div>
+        <div class="dusk-horizon"></div>
+    </div>
+
+    <header class="hero-section services-hero">
         <div class="hero-content">
-            <a href="index.html" class="back-link">← Volver al inicio</a>
-            <h1 class="modern-title">Nuestros <span class="gradient-text">Servicios</span></h1>
+
+            <a href="index.html" class="back-link">
+                <span class="back-arrow">←</span> Volver al inicio
+            </a>
+
+            <div class="availability">
+                <span class="pulse-dot"></span>
+                <span>Toca cualquier servicio para solicitarlo por WhatsApp</span>
+            </div>
+
+            <h1 class="modern-title">
+                Nuestros <span class="gradient-text">Servicios</span>
+            </h1>
+
             <p class="subtitle">Radio Móvil Crepúsculo te acompaña con transporte seguro y entregas rápidas en toda tu ciudad.</p>
+
             <div class="services-grid">
-                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20Taxi%20puerta%20a%20puerta" target="_blank" class="service-card service-link featured-service">
-                    <div class="service-icon">🚖</div>
-                    <h3>Taxi puerta a puerta</h3>
-                    <p>Viajes cómodos y seguros para ir desde tu casa, trabajo o cualquier punto de la ciudad.</p>
+
+                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20Taxi%20puerta%20a%20puerta" target="_blank" rel="noopener" class="service-card service-link featured-service">
+                    <div class="service-icon-wrap icon-orange">🚖</div>
+                    <div class="service-body">
+                        <span class="service-tag">Más solicitado</span>
+                        <h3>Taxi puerta a puerta</h3>
+                        <p>Viajes cómodos y seguros para ir desde tu casa, trabajo o cualquier punto de la ciudad.</p>
+                    </div>
+                    <span class="service-cta">Solicitar →</span>
                 </a>
 
-                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20Delivery" target="_blank" class="service-card service-link featured-service">
-                    <div class="service-icon">🛵</div>
-                    <h3>Delivery</h3>
-                    <p>Envíos rápidos para alimentos, documentos y encargos de corto recorrido.</p>
+                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20Delivery" target="_blank" rel="noopener" class="service-card service-link featured-service">
+                    <div class="service-icon-wrap icon-orange">🛵</div>
+                    <div class="service-body">
+                        <span class="service-tag">Popular</span>
+                        <h3>Delivery</h3>
+                        <p>Envíos rápidos para alimentos, documentos y encargos de corto recorrido.</p>
+                    </div>
+                    <span class="service-cta">Solicitar →</span>
                 </a>
 
-                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20servicio%20de%20Licorería" target="_blank" class="service-card service-link featured-service">
-                    <div class="service-icon">🥃</div>
-                    <h3>Licorería</h3>
-                    <p>Entrega rápida de productos de licorería con atención responsable y confidencial.</p>
+                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20servicio%20de%20Licorería" target="_blank" rel="noopener" class="service-card service-link featured-service">
+                    <div class="service-icon-wrap icon-orange">🥃</div>
+                    <div class="service-body">
+                        <span class="service-tag">Popular</span>
+                        <h3>Licorería</h3>
+                        <p>Entrega rápida de productos de licorería con atención responsable y confidencial.</p>
+                    </div>
+                    <span class="service-cta">Solicitar →</span>
                 </a>
 
-                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20servicio%20al%20aeropuerto" target="_blank" class="service-card service-link">
-                    <div class="service-icon">✈️</div>
-                    <h3>Servicio al aeropuerto</h3>
-                    <p>Traslados puntuales hacia y desde el aeropuerto para que llegues a tiempo.</p>
+                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20servicio%20al%20aeropuerto" target="_blank" rel="noopener" class="service-card service-link">
+                    <div class="service-icon-wrap icon-purple">✈️</div>
+                    <div class="service-body">
+                        <h3>Servicio al aeropuerto</h3>
+                        <p>Traslados puntuales hacia y desde el aeropuerto para que llegues a tiempo.</p>
+                    </div>
+                    <span class="service-cta">Solicitar →</span>
                 </a>
 
-                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20servicio%20de%20Farmacia" target="_blank" class="service-card service-link">
-                    <div class="service-icon">💊</div>
-                    <h3>Farmacia</h3>
-                    <p>Entrega de medicamentos y productos farmacéuticos con rapidez y responsabilidad.</p>
+                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20servicio%20de%20Farmacia" target="_blank" rel="noopener" class="service-card service-link">
+                    <div class="service-icon-wrap icon-purple">💊</div>
+                    <div class="service-body">
+                        <h3>Farmacia</h3>
+                        <p>Entrega de medicamentos y productos farmacéuticos con rapidez y responsabilidad.</p>
+                    </div>
+                    <span class="service-cta">Solicitar →</span>
                 </a>
 
-                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20servicio%20de%20Mensajería" target="_blank" class="service-card service-link">
-                    <div class="service-icon">📦</div>
-                    <h3>Mensajería</h3>
-                    <p>Traslado de documentos, paquetes pequeños y encargos urgentes.</p>
+                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20servicio%20de%20Mensajería" target="_blank" rel="noopener" class="service-card service-link">
+                    <div class="service-icon-wrap icon-purple">📦</div>
+                    <div class="service-body">
+                        <h3>Mensajería</h3>
+                        <p>Traslado de documentos, paquetes pequeños y encargos urgentes.</p>
+                    </div>
+                    <span class="service-cta">Solicitar →</span>
                 </a>
 
-                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20servicio%20de%20Paquetería" target="_blank" class="service-card service-link">
-                    <div class="service-icon">📮</div>
-                    <h3>Paquetería</h3>
-                    <p>Envío seguro de paquetes y encomiendas a distintos destinos dentro de la ciudad.</p>
+                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20servicio%20de%20Paquetería" target="_blank" rel="noopener" class="service-card service-link">
+                    <div class="service-icon-wrap icon-purple">📮</div>
+                    <div class="service-body">
+                        <h3>Paquetería</h3>
+                        <p>Envío seguro de paquetes y encomiendas a distintos destinos dentro de la ciudad.</p>
+                    </div>
+                    <span class="service-cta">Solicitar →</span>
                 </a>
 
-                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20Chofer%20designado" target="_blank" class="service-card service-link">
-                    <div class="service-icon">👨‍✈️</div>
-                    <h3>Chofer designado</h3>
-                    <p>Servicio personalizado con conductor asignado para traslados especiales y recorridos frecuentes.</p>
+                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20Chofer%20designado" target="_blank" rel="noopener" class="service-card service-link">
+                    <div class="service-icon-wrap icon-purple">👨‍✈️</div>
+                    <div class="service-body">
+                        <h3>Chofer designado</h3>
+                        <p>Servicio personalizado con conductor asignado para traslados especiales y recorridos frecuentes.</p>
+                    </div>
+                    <span class="service-cta">Solicitar →</span>
                 </a>
 
-                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20servicio%20de%20Gas%20Licuado" target="_blank" class="service-card service-link">
-                    <div class="service-icon">🔥</div>
-                    <h3>Servicio de gas licuado</h3>
-                    <p>Entrega y suministro de gas licuado de forma rápida y segura para tu hogar o negocio.</p>
+                <a href="https://wa.me/59179999938?text=Hola,%20necesito%20solicitar%20un%20servicio%20de%20Gas%20Licuado" target="_blank" rel="noopener" class="service-card service-link">
+                    <div class="service-icon-wrap icon-purple">🔥</div>
+                    <div class="service-body">
+                        <h3>Servicio de gas licuado</h3>
+                        <p>Entrega y suministro de gas licuado de forma rápida y segura para tu hogar o negocio.</p>
+                    </div>
+                    <span class="service-cta">Solicitar →</span>
+                </a>
+
+            </div>
+
+            <!-- CTA inferior -->
+            <div class="services-bottom-cta">
+                <p>¿No encuentras lo que buscas? Escríbenos directamente.</p>
+                <a href="https://wa.me/59179999938?text=Hola%20Radio%20Móvil%20Crepúsculo,%20tengo%20una%20consulta." target="_blank" rel="noopener" class="btn btn-whatsapp inline-cta">
+                    <span class="btn-icon">💬</span>
+                    <span class="btn-text">
+                        <span class="btn-label">Escríbenos por WhatsApp</span>
+                    </span>
                 </a>
             </div>
+
         </div>
     </header>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Radio Móvil Crepúsculo · Taxi seguro, delivery y mensajería.</p>
+        <p class="footer-tag">Llámanos o escríbenos por WhatsApp, estamos listos para llevarte.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
 </body>
 </html>

@@ -1,56 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9RC8CY6Q4R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9RC8CY6Q4R');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radio Móvil Crepúsculo</title>
+    <title>Radio Móvil Crepúsculo — Taxi Seguro 24/7</title>
+    <meta name="description" content="Radio Móvil Crepúsculo: taxi seguro puerta a puerta, delivery, mensajería y más. Disponible 24 horas, toda la ciudad.">
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="hero-section">
+
+    <!-- Fondo atmosférico: gradiente crepúsculo + orbes + estrellas -->
+    <div class="sky-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="stars"></div>
+        <div class="dusk-horizon"></div>
+    </div>
+
+    <header class="hero-section">
         <div class="hero-content">
-            <h1 class="hero-title">Radio Móvil <span class="gradient-text">Crepúsculo</span></h1>
 
-            <button id="hero-cta" class="hero-cta" type="button">
-                <span>Solicitar móvil</span>
-            </button>
-
-            <p id="hero-cta-status" class="hero-cta-status">Presiona para enviar tu ubicación por WhatsApp.</p>
-
-            <section class="main-service">
-                <span class="badge">Servicio Principal</span>
-                <h2>Taxi seguro puerta a puerta</h2>
-            </section>
-
-            <p class="subtitle">Tu transporte de confianza a cualquier hora del día o la noche.</p>
-
-            <section id="contact-buttons" class="contact-container">
-                <a href="services.html" class="btn btn-services">Ver servicios</a>
-                <a href="tel:44200334" class="btn btn-phone">📞 44200334</a>
-                <a href="tel:79999938" class="btn btn-mobile-call">📱 79999938</a>
-                <a href="https://api.whatsapp.com/send?phone=59179999938&text=Hola%20Radio%20M%C3%B3vil%20Crep%C3%BAsculo,%20deseo%20solicitar%20un%20m%C3%B3vil." target="_blank" class="btn btn-whatsapp">💬 WhatsApp</a>
-            </section>
-
-            <div class="login-panel">
-                <button id="login-button" class="btn btn-login" type="button">🔐 Iniciar sesión</button>
-                <p class="login-note">Inicia sesión para gestionar tu pedido o revisar tus movimientos.</p>
+            <!-- Logo / Marca -->
+            <div class="brand">
+                <div class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="taxiGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#ff7e5f"/>
+                                <stop offset="0.5" stop-color="#feb47b"/>
+                                <stop offset="1" stop-color="#c471ed"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M12 26L16 16C16.6 14.8 17.8 14 19.2 14H28.8C30.2 14 31.4 14.8 32 16L36 26V36C36 37.1 35.1 38 34 38H33C31.9 38 31 37.1 31 36V34H17V36C17 37.1 16.1 38 15 38H14C12.9 38 12 37.1 12 36V26Z" fill="url(#taxiGrad)"/>
+                        <path d="M21 12H27C27.6 12 28 12.4 28 13V15H20V13C20 12.4 20.4 12 21 12Z" fill="url(#taxiGrad)"/>
+                        <circle cx="17.5" cy="30.5" r="2.5" fill="#0a0a1a"/>
+                        <circle cx="30.5" cy="30.5" r="2.5" fill="#0a0a1a"/>
+                        <path d="M15 26H33L30.5 19H17.5L15 26Z" fill="#0a0a1a" opacity="0.85"/>
+                    </svg>
+                </div>
+                <span class="brand-name">Crepúsculo</span>
             </div>
-            <p id="login-status" class="login-status" aria-live="polite"></p>
-        </div>
-    </main>
 
-    <script src="main.js"></script>
+            <!-- Badge disponible 24/7 -->
+            <div class="availability">
+                <span class="pulse-dot"></span>
+                <span>Disponible 24 horas · Toda la ciudad</span>
+            </div>
+
+            <h1 class="modern-title">
+                Radio Móvil<br>
+                <span class="gradient-text">Crepúsculo</span>
+            </h1>
+
+            <!-- Servicio Principal destacado -->
+            <div class="main-service">
+                <span class="badge">★ Servicio Principal</span>
+                <h2>Taxi Seguro Puerta a Puerta</h2>
+                <p class="main-service-desc">Viaja cómodo, tranquilo y protegido a cualquier hora del día y de la noche.</p>
+            </div>
+
+            <p class="subtitle">Tu transporte de confianza. Conductores verificados, unidades modernas y atención inmediata cuando nos necesites.</p>
+
+            <!-- Botones de Acción -->
+            <div class="contact-container">
+                <a href="services.html" class="btn btn-services">
+                    <span class="btn-icon">🚖</span>
+                    <span class="btn-text">
+                        <span class="btn-label">Ver servicios</span>
+                        <span class="btn-sub">Delivery, mensajería y más</span>
+                    </span>
+                </a>
+
+                <a href="tel:44200334" class="btn btn-phone">
+                    <span class="btn-icon">📞</span>
+                    <span class="btn-text">
+                        <span class="btn-label">Fijo: 44200334</span>
+                        <span class="btn-sub">Llamada directa</span>
+                    </span>
+                </a>
+
+                <a href="tel:79999938" class="btn btn-mobile-call">
+                    <span class="btn-icon">📱</span>
+                    <span class="btn-text">
+                        <span class="btn-label">Celular: 79999938</span>
+                        <span class="btn-sub">Llamada directa</span>
+                    </span>
+                </a>
+
+                <a href="https://wa.me/59179999938?text=Hola%20Radio%20Móvil%20Crepúsculo,%20deseo%20solicitar%20un%20móvil." target="_blank" rel="noopener" class="btn btn-whatsapp">
+                    <span class="btn-icon">💬</span>
+                    <span class="btn-text">
+                        <span class="btn-label">WhatsApp: 79999938</span>
+                        <span class="btn-sub">Respuesta inmediata</span>
+                    </span>
+                </a>
+
+                <!-- Botón GPS: funciona en smartphone (GPS real) y PC (geolocalización del navegador) -->
+                <button type="button" id="gpsBtn" class="btn btn-gps" aria-live="polite">
+                    <span class="btn-icon" id="gpsBtnIcon">📍</span>
+                    <span class="btn-text">
+                        <span class="btn-label" id="gpsBtnLabel">Enviar mi ubicación GPS</span>
+                        <span class="btn-sub" id="gpsBtnSub">Toca para compartir tu ubicación por WhatsApp</span>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Mensaje de estado del GPS (feedback inline) -->
+            <div id="gpsStatus" class="gps-status" role="status" hidden></div>
+
+            <!-- Franja de confianza -->
+            <div class="trust-strip">
+                <div class="trust-item">
+                    <span class="trust-icon">🛡️</span>
+                    <span>Conductores verificados</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">⚡</span>
+                    <span>Atención inmediata</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">🕐</span>
+                    <span>Servicio 24/7</span>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Radio Móvil Crepúsculo · Taxi seguro, delivery y mensajería.</p>
+        <p class="footer-tag">Llámanos o escríbenos por WhatsApp, estamos listos para llevarte.</p>
+    </footer>
+
+    <script src="main.js" defer></script>
+
 </body>
 </html>
